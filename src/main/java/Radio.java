@@ -2,11 +2,13 @@ public class Radio {
     private int currentRadioStation;
     private int minCurrentRadioStation = 0;
     private int maxCurrentRadioStation = 9;
+    private int amountRadioStation = 10;
     private int soundVolumeLevel;
     private int minSoundVolumeLevel = 0;
     private int maxSoundVolumeLevel = 100;
 
     public Radio(int amountRadioStation) {
+        this.amountRadioStation = amountRadioStation;
         this.maxCurrentRadioStation = amountRadioStation - 1;
     }
 
